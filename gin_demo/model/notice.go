@@ -35,9 +35,14 @@ func Add(notice *Notice) Err {
 }
 
 func Del(id int) Err {
-	n, err := global.My.DB.Id(id).Delete(&Notice{})
+	//n, err := global.My.DB.Id(id).Delete(&Notice{})
+	//if err != nil || n <= 0 {
+	//	return Err{ModelErrDel, err}
+	//}
+	//return Err{ModelNoErr, nil}
+	n, err := global.My.DB.Id(notice.Id).Update(notice)
 	if err != nil || n <= 0 {
-		return Err{ModelErrDel, err}
+		return Err{ModelErrUpdate, err}
 	}
 	return Err{ModelNoErr, nil}
 }
