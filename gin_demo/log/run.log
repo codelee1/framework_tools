@@ -1,0 +1,15 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /notice/                  --> gin_demo/controller.(*NoticeController).Add-fm (4 handlers)
+[GIN-debug] DELETE /notice/:id               --> gin_demo/controller.(*NoticeController).Del-fm (4 handlers)
+[GIN-debug] PUT    /notice/:id               --> gin_demo/controller.(*NoticeController).Update-fm (4 handlers)
+[GIN-debug] GET    /notice/:id               --> gin_demo/controller.(*NoticeController).Get-fm (4 handlers)
+[GIN-debug] GET    /notice/                  --> gin_demo/controller.(*NoticeController).GetAll-fm (4 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] redirecting request 301: /notice/ --> /notice/
+[GIN] 2020/08/18 - 22:25:28 | 200 |  288.037514ms |       127.0.0.1 | GET      "/notice/"
+[GIN] 2020/08/18 - 22:25:28 | 404 |       1.299µs |       127.0.0.1 | GET      "/favicon.ico"
