@@ -1,6 +1,6 @@
 module framework_tools/go_kit
 
-go 1.13
+go 1.23
 
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible

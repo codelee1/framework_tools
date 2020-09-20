@@ -1,0 +1,8 @@
+syntax = "proto3";
+package pb;
+import "user.proto";
+service User {
+    rpc Login (LoginREQ) returns (LoginACK) {}
+
+    rpc UserInfo (UserInfoREQ) returns (UserInfoACK) {}
+}
